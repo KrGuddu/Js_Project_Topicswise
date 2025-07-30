@@ -19,7 +19,7 @@ Open `index.html` in browser or use Live Server in Codespaces/VS Code.
 
 echo "" >> TMP_INDEX.md
 cat TMP_INDEX.md
-# Output ko copy karke root README.md me paste kar lo
+# Copy the output and paste it into the root README.md file.
 rm TMP_INDEX.md
 ## Mini Projects
 - [project1](js-mini-projects/project1)
