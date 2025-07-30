@@ -22,6 +22,6 @@ cat TMP_INDEX.md
 # Copy the output and paste it into the root README.md file.
 rm TMP_INDEX.md
 ## Mini Projects
-- [project1](js-mini-projects/project1)
+- [calculator](js-mini-projects/calculator/)
 - [project2](js-mini-projects/project2)
 - [project3](js-mini-projects/project3)

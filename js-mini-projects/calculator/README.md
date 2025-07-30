@@ -1,6 +1,6 @@
-# project1
+# calculator
 
-Short description of project1.
+Short description of calculator.
 
 ## Tech
 - HTML, CSS, JavaScript
