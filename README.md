@@ -14,3 +14,14 @@ Open `index.html` in browser or use Live Server in Codespaces/VS Code.
 ## Author
 - Guddu Kumar
 - krguddu684@gmail.com
+
+
+
+echo "" >> TMP_INDEX.md
+cat TMP_INDEX.md
+# Output ko copy karke root README.md me paste kar lo
+rm TMP_INDEX.md
+## Mini Projects
+- [project1](js-mini-projects/project1)
+- [project2](js-mini-projects/project2)
+- [project3](js-mini-projects/project3)
