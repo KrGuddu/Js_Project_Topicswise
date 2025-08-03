@@ -1,12 +1,29 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mini Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Age Calculator</title>
 </head>
+
 <body>
-  <h1>Mini Project</h1>
-  <script src="script.js"></script>
+  <input type="number" id="age" placeholder="Enter Your Age">
+  <button onclick="checkAge()">Check Your Eligibility</button>
+  <p id="message"></p>
+
+  
+  <!-- <script src="script.js"></script> -->
+  <script>
+    function checkAge() {
+      const age = parseInt(document.getElementById("age").value)
+      if (age >= 18) {
+        document.getElementById("message").innerText = "You are eligible for vote!"
+      } else {
+        document.getElementById("message").innerText = "Sorry, Keep 18+"
+      }
+    }
+  </script>
 </body>
+
 </html>
