@@ -3,10 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mini Project</title>
+  <title>Multiplication Tabler Generator</title>
 </head>
 <body>
-  <h1>Mini Project</h1>
-  <script src="script.js"></script>
+  <input type="number" id="number"/>
+  <button onclick="generateTable()">Generate Table</button>
+  <ul id="tableList"></ul>
+  
+  <script>
+    function generateTable(){
+      const num = parseInt(document.getElementById("number").value);
+      const list = document.getElementById("tableList");
+      list.innerHTML = "";
+
+      for(let i = 1; i <= 10; i++){
+      const item = document.createElement("li");
+      item.innerText = `${num} X ${i} = ${num * i}`;
+      list.appendChild(item);
+    }
+    }
+  </script>
+  <!-- <script src="script.js"></script> -->
 </body>
 </html>
