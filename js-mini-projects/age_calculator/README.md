@@ -1,4 +1,4 @@
-# project2
+# Age Calculator
 
 Short description of project2.
 
