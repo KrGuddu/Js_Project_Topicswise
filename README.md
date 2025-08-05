@@ -23,5 +23,5 @@ cat TMP_INDEX.md
 rm TMP_INDEX.md
 ## Mini Projects
 - [calculator](js-mini-projects/calculator/)
-- [project2](js-mini-projects/project2)
+- [Age Calculator](js-mini-projects/age_calculator)
 - [project3](js-mini-projects/project3)
