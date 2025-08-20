@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
 </head>
+
 <body>
     <input type="text" id="task">
     <button onclick="addTask()">Add Task</button>
     <ul id="taskList"></ul>
 </body>
+
+<script>
+    let tasks = []
+
+    function addTask() {
+        const task = document.getElementById("task").value;
+        tasks.push(task);
+        displayTasks();
+        document.getElementById("task").value = "";
+    }
+
+    function displayTasks() {
+        const list = document.getElementById("taskList");
+        list.innerHTML = "";
+        tasks.forEach((t, i) => {
+            const li = document.createElement("li");
+            li.innerHTML = `${t} <button onclick ="deleteTask(${i})">❌</button>`;
+            list.appendChild(li);
+        });
+    }
+
+    function deleteTask(index) {
+        tasks.splice(index, 1);
+        displayTasks();
+    }
+</script>
 
 </html>
