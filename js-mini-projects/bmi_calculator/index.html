@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+
+<body>
+    <h2>BMI Calculator</h2>
+    <input type="number" id="weight" placeholder="Weight (Kg)">
+    <input type="number" id="height" placeholder="Height (M)">
+    <button onclick="calculateBMI()">Calculate BMI</button>
+    <p id="bmiResult"></p>
+
+    <script>
+        function calculateBMI() {
+            const Weight = parseFloat(document.getElementById("weight").value);
+            const Height = parseFloat(document.getElementById("height").value);
+            const bmi = Weight/(Height*Height);
+            document.getElementById("bmiResult").innerHTML = "Your BMI Result : " + bmi.toFixed(2) + " kg/m²";
+        }
+    </script>
+</body>
+
+</html>
