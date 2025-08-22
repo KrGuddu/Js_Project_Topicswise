@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile Card</title>
+</head>
+
+<body>
+  <div class="card">
+    <h2 id="name"></h2>
+    <p id="age"></p>
+    <p id="email"></p>
+    <p id="location"></p>
+    <p id="profession"></p>
+    <button onclick="updateUser()">Update Profile</button>
+  </div>
+
+  <script>
+    // Step 1: Create object
+    let user = {
+      name: "Guddu Kumar",
+      age: 23,
+      email: "guddu@example.com",
+      location: "Delhi, India",
+      profession: "React Developer"
+    };
+
+    // Step 2: Function to display user info
+    function displayUser() {
+      document.getElementById("name").innerText = user.name;
+      document.getElementById("age").innerText = "Age: " + user.age;
+      document.getElementById("email").innerText = "Email: " + user.email;
+      document.getElementById("location").innerText = "Location: " + user.location;
+      document.getElementById("profession").innerText = "Profession: " + user.profession;
+    }
+
+    // Step 3: Update User Details
+    function updateUser() {
+      user.name = "Rahul Sharma";
+      user.age = 28;
+      user.email = "rahul@example.com";
+      user.location = "Noida, India";
+      user.profession = "Full Stack Developer";
+
+      displayUser(); // re-render
+    }
+
+    // Initial render
+    displayUser();
+  </script>
+</body>
+
+</html>
