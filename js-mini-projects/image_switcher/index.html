@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Switcher</title>
+  </head>
+  <body>
+    <h2>Image Switcher</h2>
+    <img
+      id="mainImage"
+      src="https://aarvidecor.in/cdn/shop/files/25_9e1a8ee4-ea60-46bc-b74b-6cb9c24049a0.jpg?v=1730105696&width=400"
+      alt="Image"
+    />
+    <!-- default Image -->
+
+    <br /><br />
+    <button onclick="changeImage(1)">Imgae 1</button>
+    <button onclick="changeImage(2)">Imgae 2</button>
+    <button onclick="changeImage(3)">Imgae 3</button>
+
+    <script>
+      function changeImage(num) {
+        const image = document.getElementById("mainImage");
+
+        if (num === 1) {
+          image.src =
+            "https://aarvidecor.in/cdn/shop/files/1_201.jpg?v=1730961553&width=400";
+        } else if (num === 2) {
+          image.src =
+            "https://aarvidecor.in/cdn/shop/files/1_128_9652751e-ccc0-4c5b-a24a-b2279cb28042.jpg?v=1730958971&width=400";
+        } else if (num === 3) {
+          image.src =
+            "https://aarvidecor.in/cdn/shop/files/TJ_14396.jpg?v=1726915664&width=400";
+        }
+      }
+    </script>
+  </body>
+</html>
